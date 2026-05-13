@@ -15,6 +15,7 @@ class DestinationExplorer extends Component
     public function mount()
     {
         // Uncomment this to use the database
+        dd(\App\Models\Destination::all());
         // $this->destinations = \App\Models\Destination::all()->toArray();
 
         $this->destinations = $this->getHardcodedDestinations();
