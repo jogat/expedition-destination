@@ -64,9 +64,13 @@ class DestinationExplorer extends Component
         $this->filteredDestinations = $sorted;
     }
 
+    public function updatedSearchTerm()
+    {
+        $this->search();
+    }
+
     public function render()
     {
-        // dd($this->filteredDestinations);
         return view('livewire.destination-explorer');
     }
 

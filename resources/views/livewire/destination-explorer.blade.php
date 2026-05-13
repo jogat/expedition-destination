@@ -5,7 +5,7 @@
     <div>
         <p>Search</p>
         <p>Searching for: <span id="search-term">{{ $searchTerm }}</span></p>
-        <input type="text" wire:model="searchTerm" wire:keydown="search" style="border: 1px solid black; padding: 4px;">
+        <input type="text" wire:model.live.debounce.500ms="searchTerm" style="border: 1px solid black; padding: 4px;">
         <button wire:click="resetSearch">Reset Search</button>
     </div>
     <br>
