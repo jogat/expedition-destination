@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use Livewire\Component;
+use \App\Models\Destination;
 
 class DestinationExplorer extends Component
 {
@@ -14,11 +15,7 @@ class DestinationExplorer extends Component
 
     public function mount()
     {
-        // Uncomment this to use the database
-        dd(\App\Models\Destination::all());
-        // $this->destinations = \App\Models\Destination::all()->toArray();
-
-        $this->destinations = $this->getHardcodedDestinations();
+        $this->destinations = Destination::all()->toArray();
         $this->filteredDestinations = $this->destinations;
     }
 
@@ -69,6 +66,7 @@ class DestinationExplorer extends Component
 
     public function render()
     {
+        // dd($this->filteredDestinations);
         return view('livewire.destination-explorer');
     }
 
