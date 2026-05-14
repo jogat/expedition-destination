@@ -7,3 +7,8 @@ First I need to work on the Project setup
 I've found the issue on `DestinationExplorer`, after reviewing a few alternatives, I think overriding the activites property on `Destination` is the most long term solution, as it can be used on different context out of `DestinationExplorer`.
 The next thing I noticed is, the search request is being triggered on every keydown, so in order to reduce the amount of not needed request, I've added a debounce strategy
 I've added Authentication layer and User seeder
+
+With more time, I would have liked to add:
+- test coverage
+- more styling to the components
+- CI integration
