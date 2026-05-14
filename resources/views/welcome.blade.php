@@ -7,6 +7,10 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
+    <form method="POST" action="/logout" style="text-align:right; padding:12px;">
+        @csrf
+        <button type="submit" style="padding:8px; background:#cecece; cursor:pointer;">Logout</button>
+    </form>
     <livewire:destination-explorer />
 </body>
 </html>
