@@ -12,3 +12,8 @@ With more time, I would have liked to add:
 - test coverage
 - more styling to the components
 - CI integration
+- pagination logic
+- slug column to the destinations table
+- dedicated detail page via slug
+- user action metrics
+- add ratings table to rate the destination
